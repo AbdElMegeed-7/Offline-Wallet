@@ -1,0 +1,10 @@
+<h3>Hello {{ request.user.username }} !! </h3><br>
+<h4>Your Balance : {{ balance }}</h4>
+
+<form method="post">
+    <input type="text" name="username" placeholder="Enter Username">
+    <input type="text" name="the amount" placeholder="Enter Amount">
+    <input type="submit" value="submit">
+</form>
+
+<a href="{% url 'logout' %}">Log Out</a>
